@@ -5,7 +5,8 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run android": "cordova run android",
+    "serve android": "cordova serve android"
   },
   "keywords": [
     "ecosystem:cordova"
@@ -17,10 +18,12 @@
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-network-information": {}
     }
   },
   "dependencies": {
-    "cordova-android": "^8.1.0"
+    "cordova-android": "^8.1.0",
+    "cordova-plugin-network-information": "^2.0.2"
   }
 }
