@@ -82,7 +82,7 @@ let initHomePage = new Promise(resolve => {
         let conversationList = conversations.sort(((a, b) => b.lastMessage.time - a.lastMessage.time));
 
         addConversation(0, conversationList)
-            .then(_ => initFooter('home-page'))
+            // .then(_ => initFooter('home-page'))
             .then(_ => resolve(true));
     });
 
