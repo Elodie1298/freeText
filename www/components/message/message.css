@@ -1,0 +1,49 @@
+#message-list  li {
+    display: flex;
+    flex-direction: column;
+    border-width: 0;
+    margin: 8px;
+    padding: 0;
+    background: none;
+}
+#message-list li.user {
+    align-items: flex-end;
+}
+#message-list li div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#message-list li.user div {
+    flex-direction: row-reverse;
+}
+#message-list li .content {
+    width: fit-content;
+    max-width: 60%;
+    margin: 0;
+    padding: 8px 12px;
+    white-space: normal;
+    border: solid 1px #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+#message-list li .information {
+    margin-left: 68px;
+    width: fit-content;
+}
+#message-list li.user .information {
+    margin-left: 0;
+    margin-right: 68px;
+}
+#message-list li .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 8px;
+}
+#message-list li.user .avatar {
+    margin-right: 0;
+    margin-left: 8px;
+}
